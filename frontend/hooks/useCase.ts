@@ -70,9 +70,9 @@ export function useCase(id: string | undefined) {
   };
 
   // Load case data whenever the id changes.
-  useEffect(() => {
-    load();
-  }, [id ,load]);
+useEffect(() => {
+  load();
+  }, [id]);
 
   // Expose state + actions to the UI.
   return {
